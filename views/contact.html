@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <form action="forms/contact.php" method="post" role="form">
+      <div>
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          id="name"
+          placeholder="Your Name"
+          data-rule="minlen:4"
+          data-msg="Please enter at least 4 chars"
+        />
+        <input
+          type="text"
+          name="surmane"
+          class="form-control"
+          id="surname"
+          placeholder="Your Surname"
+          data-rule="minlen:4"
+          data-msg="Please enter at least 4 chars"
+        />
+      </div>
+      <div>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          id="email"
+          placeholder="Your Email"
+          data-rule="email"
+          data-msg="Please enter a valid email"
+        />
+      </div>
+      <div>
+        <select id="cars" name="cars">
+          <option value="consulta">consulta</option>
+          <option value="propuesta">propuesta laboral</option>
+        </select>
+      </div>
+      <div>
+        <label for="news"> desea recibir un newslatter</label>
+        <input type="checkbox" id="news" name="news" value="news" />
+      </div>
+      <div>
+        <textarea
+          class="form-control"
+          name="message"
+          rows="5"
+          data-rule="required"
+          data-msg="Please write something for us"
+          placeholder="Message"
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit">Reset</button>
+        <button type="button">Send Message</button>
+      </div>
+    </form>
+    <footer>
+      <h2>RODRIGO GUZMAN</h2>
+      <h4>DESARROLLADOR FULLSTACK</h4>
+      aca van los links a los diferentes medios de contacto
+    </footer>
+  </body>
+</html>
